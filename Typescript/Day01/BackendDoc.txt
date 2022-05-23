@@ -1,0 +1,35 @@
+
+
+		Employee entity
+			id => int
+			name => string
+			mobile no => String
+			emailid =>String
+			gender => optional
+			department => String
+			status => string => Active/inactive/suspended
+			created date => date 
+			created by => string
+			updated by => string
+			updatedate => Date
+			@Column(name="cid")
+			Country country => one to one mapping
+			
+	Country => Entity	
+		cid => int 
+		cname => string 
+
+Api=> 
+	1 GetAllCountry => all country
+	2 Getparticular country
+	3 Update particular Country by id
+	4 delete particular country by id 
+	5 GetAllEmploye
+	6 GetparticularEmployee by id 
+	7 UpadteParyticular Emp by id 
+	8 Delete Particular emp by id
+	
+	
+
+	
+		
