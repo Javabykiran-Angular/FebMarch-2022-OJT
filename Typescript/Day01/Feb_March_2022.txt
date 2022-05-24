@@ -1,0 +1,22 @@
+				Welcome to Angular Module
+						Sumit Raokhande
+- Angular u don't requires JS knowleg.
+- Angular 8 => Front End Technology
+- Time duration Avg 1.15 min it may be 1.30 min or 1 hr depend on topic 
+- Duration 50Hr Teaching 
+- Angular Project  duration 10 -15 days
+- Project coding Industry ,Build , Deployment
+- Interview Question
+- Angular 8 it is stable version angular 7/8/9
+- Typescript =>  js 
+- u know at least Basics of HTML & CSS
+- OOPs is required
+- Every session recording will be given
+- download a recording after 4 working days it is auto dleted from cloud
+- code karunga all code will accessible plus all soft copy notes will provide except images
+- time 11.15 am 5 min buffer time 
+- monday to friday => 10min doubt before lect 8min
+- saturday session doubt session 
+- 
+
+
