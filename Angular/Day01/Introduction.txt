@@ -1,0 +1,42 @@
+Introduction of Angular Arch. & file Structure
+Overview Of Angular Arch.
+	- It is Component orientated Arch.
+		
+	- What is component
+		- view
+		- css 
+		- component ts file
+		- spec.ts => testing 
+		@Component({
+			selector: ....
+			view file 
+			style 
+		})
+		
+	- data binding 
+		1 String interpolation
+		2 Property Binding
+		3 Style Binding
+		4 Class Binding
+		- data flow from component (.ts) to view (.html)
+	- event binding
+		- view to component
+		- click,change,keyboard,mouse event ,custom event
+		- data/request
+	- directive
+		to change ur dom structure behaviour
+	- appModule
+		1 Declaration
+			- to register ur component/pipe/directive
+		2 Import Module
+			
+		3 Services => Providers
+		
+		5 Routing => 
+			
+	- Injector
+		- 3rd paraty services to use 
+		- inbuild services 
+		- inbuid variable/object
+	
+2 File Structure
