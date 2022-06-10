@@ -1,0 +1,15 @@
+
+img{
+  height: 250px;
+  width: 250px;
+}
+
+.mycolor{
+  color: blue;
+}
+
+
+#myId{
+  color: aqua;
+  font-style: italic;
+}
