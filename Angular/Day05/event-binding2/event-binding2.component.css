@@ -1,0 +1,16 @@
+
+input{
+  margin: 5px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid blue;
+}
+
+button{
+  margin: 5px;
+  padding: 8px;
+  border: 2px dotted green;
+  background-color: darkorchid;
+  color: white;
+  border-radius: 8px;
+}

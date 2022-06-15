@@ -1,0 +1,35 @@
+<p>event-binding2 works!</p>
+
+<!-- template ref variable 
+  #uniqueName
+-->
+<!-- <input #name type="text" placeholder="Enter the name"> <br>
+<button (click)="onSend(name)">Send</button>
+<hr>
+<input #name1 type="text" placeholder="Enter the name"> <br>
+<button (click)="onSend1(name1.value)">Send</button>
+<hr> -->
+
+<!-- 
+<label for="">Number 1:: &nbsp;&nbsp;</label> 
+<input #num1 type="text" placeholder="Enter the Number1" > <br><br>
+
+
+<label for="">Number 2:: &nbsp;&nbsp;</label> 
+<input type="text" placeholder="Enter the Number2" #num2 > <br><br>
+
+<button (click)="onAddition(num1.value,num2.value)">Addition</button> <br><br>
+
+<label for="">Result ::  &nbsp;&nbsp;</label> 
+<input type="text"    [value]="result" placeholder="Result"> <br><br> -->
+
+<!-- ngModel => it performs Two way Binding 
+It is Attribute Directive
+notation=> [(ngModel)]="PropertyName" 
+Import one Module FormsModule
+-->
+<!-- <input type="text" [(ngModel)]="myName" placeholder="Enter the name "><br>
+{{myName}} -->
+
+<input type="text" (change)="onChange(input1)" #input1
+placeholder="Enter the name">
