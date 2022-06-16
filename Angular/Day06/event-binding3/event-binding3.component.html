@@ -1,0 +1,31 @@
+<p>event-binding3 works!</p>
+
+<input type="text" (keyup)="onKeyUp()" placeholder="Keyup Event"> <br><br>
+
+<input type="text" (keydown)="onKeydown()" placeholder="Keydown Event"><br><br>
+
+<!-- Enter key event  -->
+
+<input (keyup.enter)="OnKeyEnter()"
+type="text" placeholder="Enter key event"> <br><br>
+
+<!-- event binding without method -->
+
+<textarea #txtname cols="30" rows="10"
+    (change)="name=txtname.value"
+  placeholder="Enter the name "
+></textarea>
+
+<h2> {{name}} </h2>
+
+<br><br>
+<input type="text" 
+    (keyup.enter)="name2=$event.target.value"
+placeholder="Enter the Name" >
+
+<h2> {{name2}} </h2>
+
+
+
+
+
