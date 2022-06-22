@@ -1,0 +1,17 @@
+<p>parent works!</p>
+
+  <select #coursename name="" id="">
+    <option value="angular8">Angular 8</option>
+    <option value="springboot">Spring Boot</option>
+    <option value="corejava">Core Java</option>
+    <option value="jsp">JSP</option>
+  </select>
+    <br><br>
+    <button (click)="OnSelect(coursename.value)">Select Course</button>
+
+<hr>
+
+<app-child1 [ParentData]="strData" 
+    [ParentjsonData]="jsonObj"
+    [ParentCourse]="myCourse"
+></app-child1>
