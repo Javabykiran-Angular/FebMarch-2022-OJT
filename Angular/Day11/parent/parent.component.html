@@ -1,0 +1,48 @@
+<p>parent works!</p>
+
+  <!-- <select #coursename name="" id="">
+    <option value="angular8">Angular 8</option>
+    <option value="springboot">Spring Boot</option>
+    <option value="corejava">Core Java</option>
+    <option value="jsp">JSP</option>
+  </select>
+    <br><br>
+    <button (click)="OnSelect(coursename.value)">Select Course</button> -->
+    <br><br>
+
+    <h2> Child Data ::  {{StrDataReceived}} </h2>
+
+    <table>
+      <thead>
+        <th>SR NO </th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of arrObjData;index as i">
+          <td> {{i+1}} </td>
+          <td> {{item.name}} </td>
+          <td> {{item.price}} </td>
+          <td> {{item.quantity}} </td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+
+    <div *ngFor="let item of FiletrData">
+       {{item}}
+    </div>
+
+<hr>
+
+<!-- <app-child1 [ParentData]="strData" 
+    [ParentjsonData]="jsonObj"
+    [ParentCourse]="myCourse"
+></app-child1> -->
+
+
+<app-child2 (ChildStrEvent)="StrDataReceived=$event"
+            (ChildArrObjEvent)="OnEventgenerate($event)"
+            (ChildFilterEvent)="FiletrData=$event"
+></app-child2>

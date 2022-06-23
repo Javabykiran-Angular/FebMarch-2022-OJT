@@ -1,0 +1,18 @@
+<p>child2 works!</p>
+
+<!-- <button (click)="onClick()">Send</button> <br><br>
+
+<button (click)="OnArrObjClick()">Array Of Object</button>  -->
+
+<div>
+<label for="" *ngFor="let item of filterarr">
+<input type="checkbox" (change)="OnChange(item,$event.target.checked)">&nbsp; {{item}}
+</label>
+</div>
+<br>
+
+<button (click)="OnFilter()">Filter Send</button>
+
+<!-- <div *ngFor="let item of CheckedArray">
+  {{item}}
+</div> -->
