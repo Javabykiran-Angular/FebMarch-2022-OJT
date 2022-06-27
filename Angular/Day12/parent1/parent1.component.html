@@ -1,0 +1,20 @@
+<p>parent1 works!</p>
+
+<div #maindiv>
+  <p>U r accessing data using View Child Decorator </p>
+</div>
+
+<div class="MainDiv">
+    <div class="boxCenter">
+
+      <button (click)="onChildProperty()" >Access Child Property</button>
+      <button (click)="onChildMethod()" >Access Child Method</button>
+
+    </div>
+
+    <div class="CompDiv">
+      <app-child3></app-child3>
+    </div>
+
+</div>
+

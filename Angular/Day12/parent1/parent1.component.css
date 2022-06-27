@@ -1,0 +1,33 @@
+
+.box{
+
+    border: 2px dotted black;
+    background-color: aqua;
+    color: blueviolet;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 8px;
+
+}
+
+.MainDiv{
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+}
+
+.boxCenter{
+  margin-right: 10px;
+  height: 150px;
+  align-items: center;
+}
+.boxCenter button{
+  margin-right: 10px;
+}
+.CompDiv{
+    border: 2px dashed black;
+    margin-left: 10px;
+    padding: 8px;
+    width: 500px;
+
+}
