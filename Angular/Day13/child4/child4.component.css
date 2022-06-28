@@ -1,0 +1,19 @@
+
+.myform{
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  color: black;
+  border-radius: 5px;
+  
+}
+.myform *{
+  display: block;
+}
+
+.myform .myinput{
+  margin: 4px 0px;
+
+}

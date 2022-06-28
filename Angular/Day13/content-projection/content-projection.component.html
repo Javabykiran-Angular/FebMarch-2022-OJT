@@ -1,0 +1,37 @@
+<p>content-projection works!</p>
+
+
+<!-- <app-child4 [ParentHtmlTag]="htmlTag"
+            [name]="'Email :: '"
+             [bg] ="'myprimary'" 
+             [mytype]="'text'"
+             [myplaceholder]="'Enter the Email...'"
+             [hint]="'Email Address'"
+></app-child4> -->
+
+
+<app-child4 
+            [name]="'Email :: '"
+             [bg] ="'myprimary'"              
+             [hint]="'Email Address'"
+>
+
+<label for=""> Email:: </label>
+
+<input type="text" placeholder="Enter the Email Id " 
+  (change)="onChange($event.target.value)"
+>
+
+</app-child4>
+
+<app-child4 
+            [name]="'Password :: '"
+             [bg] ="'myaccent'"              
+             [hint]="'Password'"
+>
+<label for=""> Password:: </label>
+<input type="password" placeholder="Enter the Password " 
+  (change)="onChange($event.target.value)"
+>
+
+</app-child4>

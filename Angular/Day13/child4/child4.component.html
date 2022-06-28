@@ -1,0 +1,24 @@
+<!-- <p>child4 works!</p> -->
+
+<!-- <div [innerHtml]="ParentHtmlTag">
+   {{ParentHtmlTag}} 
+  </div> -->
+
+
+  <div class="myform {{bg}} ">
+    <!-- <label for=""> {{name}}   </label> -->
+
+    <!-- <input  class="" [type]="mytype" [placeholder]="myplaceholder"> -->
+
+    <div>
+      <ng-content> </ng-content>  
+     
+    </div>
+
+    <div>
+    <ng-content> </ng-content>    
+    </div>
+    <small> {{hint}} </small>
+  </div>
+
+  
