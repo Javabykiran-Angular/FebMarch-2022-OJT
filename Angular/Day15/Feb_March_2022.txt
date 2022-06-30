@@ -1,0 +1,72 @@
+Last Lecture
+1 Pipe
+	- It transform ur data & render to ur user without changing its orignal value 
+	
+2 Inbuild Pipe 
+	- lowercase,uppercase,titlecase
+	- slice 
+	{{strdata|slice:2:7}}
+	- percent 
+	{{0.025|percent:'1.1' }}
+	- Currency
+		{{0.25| currency}}
+		{{25|currency:'INR':'code'}}
+	- number
+		{{5.6745236|number:'2.2-3'}}
+	- Date
+		mydate=new Date();
+		
+		{{mydate|date:'lonDate'}}
+		{{mydate|date:'mediumDate'}}
+		{{mydate|date:'dd-MM-yyyy'}}
+		{{mydate|date:'lonDate'|uppercase}}
+		{{mydate|date:'hh:mm:ss a'}}
+
+Today's Lecture
+1 Custom Pipe 
+2 PipeTransform interface
+3 transform method
+4 @Pipe 
+5 two type 
+	1 pure pipe => deterministic value => we have to fixed value to transform 
+	2 impure pipe => non deterministic value 
+
+
+
+
+
+
+
+	
+
+	
+	
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
