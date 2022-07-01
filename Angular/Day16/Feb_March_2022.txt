@@ -1,0 +1,79 @@
+Last Lecture
+1 Custom Pipe 
+2 PipeTransform interface
+3 transform method
+	
+	@Pipe({
+		name:'summary',
+		pure:false,
+	})	
+	export class SummaryPipe implements PipeTransform {
+		transform(value:any,start:number=0,end:number=15){
+			let temp=(<string> value);
+			return (temp.substring(start,end)+" ...")
+		}
+	}
+	app.module.ts
+	declaration: [
+			SummaryPipe
+	]
+	custompipe.html
+	{{strdetails | summary:0:20}}
+	
+4 @Pipe 
+5 two type 
+	1 pure pipe => deterministic value => we have to fixed value to transform 
+	2 impure pipe => non deterministic value 
+	
+Today's Lecture
+1 Services
+	- It is simple class 
+	- u can write any BL in service
+	- we can reuse that service any component
+	- we can use code Maintainabilty
+	- we can connect our backend server to frontend
+	implementation of service using DI 
+2 Dependancy injection
+	- DI creates a singlton Object
+	- Angular creates a single instance of that resourse & that instance we can use any where in our application 
+
+
+
+
+
+
+
+
+	
+
+	
+	
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
