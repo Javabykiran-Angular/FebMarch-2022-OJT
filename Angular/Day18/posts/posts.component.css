@@ -1,0 +1,9 @@
+
+th,tr,td{
+  border: 1px solid;
+}
+button{
+  margin: 5px;
+  padding: 5px;
+  text-decoration: underline;
+}

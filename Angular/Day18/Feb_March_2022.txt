@@ -1,0 +1,124 @@
+Last Lecture
+1 Http Protocol
+	- it is set of rule 
+2 Http Mthods
+	- get => to fetch a data from backend to frontend
+	- Post => To send a data from frontend to backend 
+	- Put => to Update a particular data
+	- delete => to delete a particular data 
+3 Http Request-resposne
+		Http Request has 2 parts 
+			1 Http Header
+				- ip
+				- http Method
+				- auth
+				- Content Type	
+					- img
+					- pdf
+					- text
+					- audio
+					- video
+					- html 
+				- date 
+			2 Http Body
+				- Data
+				   - Json format/xml Format/html format 
+		
+		Http Response 
+			1 Http Header
+				- ip
+				- http Method
+				- auth
+				- Content Type	
+					- img
+					- pdf
+					- text
+					- audio
+					- video
+					- html 
+				- date
+				- Status code
+					2xx=> success,ok 
+					3xx=> Redirection purpose 
+					4xx=> Client side
+					5xx=> server side 
+					
+			2 Http Body
+				- Data
+				   - Json format/xml Format/html format 
+		
+		
+	
+4 HttpClientModule
+	
+	app.module.ts
+	import: []
+5 https://jsonplaceholder.typicode.com/posts
+
+	- It is a fake service 
+	- u send any data from front end post ,put,delete it is not store in database but it gives a response to ur request 
+	
+	
+6 Http get
+
+	@Injectable({
+		provideIn:'root'
+	})
+	export class HttpService{
+		url:string="https://jsonplaceholder.typicode.com/posts"
+		constructor(private http:HttpClient){
+		
+		}
+		
+		getPost(){
+			return (this.http.get(this.url));
+		}
+	
+	}
+	
+	post.ts
+	
+	constructor(private service:HttpService){
+	}
+	
+	ngOnInit(){
+		this.getAllPost();
+	}
+
+getAllPost(){
+	this.service.getPost()
+	.subscribe((response)=>{
+		this.posts=(<any> response);
+	})
+}
+
+Today's Lecture
+1 Http Post
+2 Http Put
+3 Http Delete
+4 Error Handling
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
