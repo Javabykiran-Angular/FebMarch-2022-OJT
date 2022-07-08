@@ -1,0 +1,84 @@
+Last Lecture
+1 Routing
+	- navigation from one component to the another component
+2 Routing Steps
+	1 Configure the route
+		[
+			{
+				path:"",component:HomeComponent
+			},
+			
+			{
+				path:"Page1",component:Page1Component
+			},
+			{
+				path:"Page2/:id/:username",component:Page2Component
+			},
+			{
+				path:"**",component:NotFoundComponent
+			}
+		]
+		app.componr.html
+		<router-outlet>
+	2 <router-outlet>
+	3 Establish the link/navigate between 2 component
+		home.html
+		<a routerLink="/Page1">
+		<a [routerLink]="['/Page2',myid,myusername]">
+		home.ts
+		
+		myid:number=9;
+		myusername:string='sumit raokhande';
+		
+		page2.ts
+		constructor(private route:ActivatatedRoute){
+		}
+		ngOnInit(){
+			this.GetAllDataFromUrl()
+		}
+		
+		GetAllDataFromUrl(){
+			this.route.ParaMap
+			.subscribe((param)=>{
+				this.myid=+param.get('id');
+				this.myusername=param.get('username');
+			})
+		}
+	
+3 Static Routing
+	
+4 Empty Path=> It load a default component
+	path:""
+5 wild cart operator => 
+6 Send parameter through routing
+7 Difference Between href & routerLink
+
+Today's Lecture
+1 Send Query parameter through routing
+2 Dynamic Routing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
