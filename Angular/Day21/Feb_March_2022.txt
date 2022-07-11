@@ -1,0 +1,65 @@
+Last Lecture
+1 Send Query parameter through routing
+	<a routerLink="/Queryparam" queryParams="jsonObj"
+	.ts file
+	jsonObj={
+		fname:'Sumit',
+		id:9,
+		status:'Active'
+	}
+	queryparam.ts
+	GetDataFromUrl(){
+		this.route.QueryParamMap
+		.subscribe((param)=>{
+			this.jsonObj.myfname=param.get("fname");
+			....
+		})
+	}
+	queryParams.html
+		<h2> {{jsonObj.myfname}}
+2 Dynamic Routing
+	<button (click)="OnPage2()">
+	
+	.ts file
+	
+	constructor(private router:Router)
+	
+	OnPage2(){
+		this.router.navigate(['/Page2',this.myid,this.myUsername]);
+	}
+	OnQueryParam(){
+		this.router.navigate(['/QueryParam'], {
+			queryParams:this.jsonObj
+		} );
+	}
+Today's Lecture
+1 Modify the Routing
+2 Rxjx Lib.
+3 Subject 
+4 Behavioural Subject
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

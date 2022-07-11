@@ -1,0 +1,18 @@
+
+a{
+  margin: 10px;
+  padding: 5px;
+  border: 1px dotted darkcyan;
+}
+button{
+  margin: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid darkblue;
+}
+
+button:hover{
+  background-color: darkgreen;
+  color: white;
+  font-family: cursive;
+}
