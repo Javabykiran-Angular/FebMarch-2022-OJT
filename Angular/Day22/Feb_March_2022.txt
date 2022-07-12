@@ -1,0 +1,100 @@
+Last Lecture
+1 Modify the Routing
+	app.comp.html
+	<app-home>
+	
+	app-routing.ts
+	
+	[
+		{
+			path:"",component:Page1Component
+		}
+	]
+	
+	home.html
+	<router-outlet>
+	
+	
+	
+	
+2 Rxjx Lib.
+3 Subject 
+	data one component to anothet component=> u can send with help of service
+		
+4 Behavioural Subject
+
+app.html
+<app-notification>
+	
+	.queryparam.html
+		<input #name>
+			<button (click)="onSend(name.value)">
+			
+		.ts file
+			constructor(private service:NotificationService)
+		
+		onSend(msg){
+			this.service.SendMessage(msg);
+		}
+		
+		
+	
+	service.ts
+		class NotificationService{
+			//notification=new Subject<string>();
+			notification=new BehaviouralSubject('Welcome ');
+			
+			SendMessage(msg){
+				this.notification.next(msg);
+			}
+		}
+		
+	notification.ts
+	constructor(private notify:NotificationService){}
+	
+	this.notify.notification.subscribe((data)=>{
+			this.notificationMsg=data;
+	})
+	
+	page1.ts
+	constructor(private notify:NotificationService){}
+	
+	this.notify.notification.subscribe((data)=>{
+			this.notificationMsg=data;
+	})
+		
+
+Today's Lecture
+1 Overview of Bootstrap
+	- It is css Framework
+	- Less Coding
+	- Make u r Application attractive
+	- Make ur application responsive
+2 Integration of Bootstrap in Angular 8
+3 Basic Grid System
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
