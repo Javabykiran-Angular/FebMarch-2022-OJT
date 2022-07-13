@@ -1,0 +1,86 @@
+Last Lecture
+1 Overview of Bootstrap
+	- It is css Framework
+	- Less Coding
+	- Make u r Application attractive
+	- Make ur application responsive
+2 Integration of Bootstrap in Angular 8
+	1 Use CDN Link in Angular application
+		index.html;=> <head> 
+	2 offline
+		npm install bootstrap@4.6 --save
+		style.css
+			@import "~bootstrap/dist/css/bootstrap.css";
+		
+3 Basic Grid System	
+	- Screen width divide in 12 col
+	- 4 4 4=> 12 
+	- col-sm-6
+	- col-md-6
+	- col-lg-6
+	- col-xl-6
+	
+	div class="conatiner">
+	
+	div class="row">
+		<div class="col-sm-6 col-md-6 ">
+			table class ="table table-striped table-border"
+		</div>
+		<div>
+			div class="form-group">
+				label > Username::
+				<input class="form-control">
+				label> password
+				<input type="password" class="form-control">
+				<button class="btn btn-success">Login
+		</div>
+		<div></div>
+	div>
+	
+	div>
+		
+
+Today's Lecture
+1 Template Driven Form
+	- Simple form design
+	- Login,signup,f/b form ....
+	- basic level validation is done on view file
+2 FormControl
+	- It is inbuild Class 
+		1 valid => true/false
+		2 invalid => true 
+		3 touched => true
+		4 pristine => true
+		5 dirty	   => true
+		6 errors => It is Object  
+3 How Create Instance of FormControl class
+	1 ngModel=> It creates FormControl instance,it holds FormControl instance. for ngModel u have to use "name" HTML attribute of HTML 
+	2 U have to use template ref. variable. U can assgin ngModel to template ref variable.
+	3 for validation purpose use errors object but "required" attribute is use 
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
