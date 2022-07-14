@@ -1,0 +1,57 @@
+Last Lecture
+1 Template Driven Form
+	- Simple form design
+	- Login,signup,f/b form ....
+	- basic level validation is done on view file
+2 FormControl
+	- It is inbuild Class 
+		1 valid => true/false
+		2 invalid => true 
+		3 touched => true
+		4 pristine => true
+		5 dirty	   => true
+		6 errors => It is Object  
+3 How Create Instance of FormControl class
+	1 ngModel=> It creates FormControl instance,it holds FormControl instance. for ngModel u have to use "name" HTML attribute of HTML 
+	2 U have to use template ref. variable. U can assgin ngModel to template ref variable.
+	3 for validation purpose use errors object but "required" attribute is use 
+		
+
+Today's Lecture
+1 Continue TDF
+2 ngValue
+3 ngSubmit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
