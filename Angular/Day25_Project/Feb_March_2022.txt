@@ -1,0 +1,135 @@
+
+
+I am Assume That u all completed ur Basic Backend task
+
+Login Api 
+
+register/admin => Sql Table
+	
+	id => int AutoIncrement=> Primary key 
+	first name =>  (optional)
+	last name (optional)
+	username => varChar(50)
+	MobileNo => varChar(15-20)
+	email => varChar(100-150) => unique
+	Password => varChar(50) 
+	gender => varChar(15)
+	createdDate => Timestamp/currentTimestamp/DateTime
+=> manually data insert karo 
+
+Spring Boot project=> 	
+	Entity Class 
+
+ @Entity
+ @Table()
+ Class Register{
+	
+	@colom(name="id")
+	@GeneratedValue(startagey=generationType.Auto)
+	@Id
+	int adminid; 
+	String Username;
+	String Password;
+	
+	//explore annotation for unique contraints
+	@coloum()
+	String emailId;
+	
+	//constructor => no argument + argument 
+	// getter& setter
+	//tostring	
+	
+ }
+ 
+//Login api 
+	
+	@CrossOrigin
+	RestController{
+	
+		@Postmapping("/login")
+		public Hashmap loginpage(@Requestbody Register reg){
+		
+			Hashmap obj= service.loginpage(reg);
+			return obj;
+			
+		}
+	
+	}
+	
+	service.java
+	
+	public Hashmap loginpage(Register reg){
+		 
+		
+		 Registration regObj=dao.loginpage(reg);
+		//validate logic
+			
+			Hashmap map=new Hashmap();
+		
+			if(regObj==null){
+				map.put("msg","Invalid User");
+				
+			}else{
+				map.put("msg","Valid User")
+				
+				
+			}	
+			map.put("user",regobj);
+			return map;
+		 
+		 
+		
+	}
+	
+	dao.java
+	
+		public Register loginpage (Register reg)
+		{
+			1 session factory
+			2 get record 
+				- if record is present it return a particular record
+				- if record is not present it return null 
+			return obj;
+		}
+		
+
+	Test That api => Postman 
+	
+	
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
